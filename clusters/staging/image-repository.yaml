@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: djangogirls
+  namespace: flux-system
+spec:
+  image: registry.gitlab.com/fill/djangogirls
+  interval: 5m
