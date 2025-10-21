@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: djangogirls
+  labels:
+    app: djangogirls
+spec:
+  type: NodePort
+  selector:
+    app: djangogirls
+  ports:
+    - port: 8000
+      targetPort: 8000

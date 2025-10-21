@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: djangogirls
+  labels:
+    app: djangogirls
+spec:
+  selector:
+    matchLabels:
+      app: djangogirls
+  template:
+    metadata:
+      labels:
+        app: djangogirls
+    spec:
+      containers:
+      - name: djangogirls
+        image: registry.eqlan.ru/fill/djangogirls:capi-c9c18ba5-1761040597 # {"$imagepolicy": "flux-system:djangogirls-stage"}
+        ports:
+        - containerPort: 8000
+        resources:
+          requests:
+            cpu: 200m
+            memory: 180Mi
+          limits:
+            cpu: 300m
+            memory: 300Mi
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8000
+          initialDelaySeconds: 30
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8000
+          initialDelaySeconds: 5
+#        readinessProbe:
+#          initialDelaySeconds: 20
+#          periodSeconds: 15
+#          grpc:
+#            port: 9555
+#        livenessProbe:
+#          initialDelaySeconds: 20
+#          periodSeconds: 15
+#          grpc:
+#            port: 9555
+
