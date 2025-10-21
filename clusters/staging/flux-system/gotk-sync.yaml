@@ -12,6 +12,7 @@ spec:
   secretRef:
     name: flux-system
   url: ssh://git@github.com/filatof/demo-djangogirls-gitops
+  
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
