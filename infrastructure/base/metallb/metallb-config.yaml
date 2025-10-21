@@ -1,0 +1,16 @@
+# metallb-config.yaml
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+ namespace: metallb-system
+ name: main-pool
+spec:
+ addresses:
+ - 192.168.1.240-192.168.1.250 #указать ip пул
+
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+ namespace: metallb-system
+ name: l2
