@@ -5,4 +5,3 @@ resources:
   - service.yaml
   - namespace.yaml
   - github.com/metallb/metallb/config/native?ref=v0.15.2
-  
