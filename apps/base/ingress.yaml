@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: djangogirls
 spec:
+  ingressClassName: nginx
   rules:
     - host: app.eqlan.ru
       http:
