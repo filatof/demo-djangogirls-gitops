@@ -4,5 +4,5 @@ metadata:
   name: djangogirls
   namespace: flux-system
 spec:
-  image: registry.gitlab.ru/fill/djangogirls
+  image: registry.eqlan.ru/fill/djangogirls
   interval: 5m
