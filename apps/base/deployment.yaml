@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: djangogirls
-        image: registry.eqlan.ru/fill/djangogirls # {"$imagepolicy": "flux-system:djangogirls"}
+        image: registry.eqlan.ru/fill/djangogirls:capi-c9c18ba5-1761040597 # {"$imagepolicy": "flux-system:djangogirls"}
         ports:
         - containerPort: 8000
         resources:
