@@ -35,14 +35,5 @@ spec:
             path: /
             port: 8000
           initialDelaySeconds: 5
-#        readinessProbe:
-#          initialDelaySeconds: 20
-#          periodSeconds: 15
-#          grpc:
-#            port: 9555
-#        livenessProbe:
-#          initialDelaySeconds: 20
-#          periodSeconds: 15
-#          grpc:
-#            port: 9555
+
 
