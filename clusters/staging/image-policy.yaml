@@ -7,7 +7,7 @@ spec:
   imageRepositoryRef:
     name: djangogirls
   filterTags:
-    pattern: '^main-[a-fA-F0-9]+-(?P<ts>.*)'
+    pattern: '^capi-[a-fA-F0-9]+-(?P<ts>.*)'
     extract: '$ts'
   policy:
     numerical:
