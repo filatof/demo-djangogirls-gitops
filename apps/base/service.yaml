@@ -6,7 +6,7 @@ metadata:
   labels:
     app: djangogirls
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: djangogirls
   ports:
